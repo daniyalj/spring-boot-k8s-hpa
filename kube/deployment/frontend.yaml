@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: spring-boot-hpa
+        image: docker.io/daniyalj/spring-boot-hpa:latest
         imagePullPolicy: IfNotPresent
         env:
         - name: ACTIVEMQ_BROKER_URL
