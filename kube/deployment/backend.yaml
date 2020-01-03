@@ -59,9 +59,9 @@ metadata:
     app: backend
 spec:
   rules:
-    - host: springbe.daniyalj.team.arctiq.ca
+    - host: backend.daniyalj.team.arctiq.ca
       http:
         paths:
           - backend:
-              serviceName: backend   # name of the frontend Service
+              serviceName: backend
               servicePort: 8080
