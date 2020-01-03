@@ -59,7 +59,7 @@ metadata:
     app: backend
 spec:
   rules:
-    - host: spring-backend.daniyalj.team.arctiq.ca
+    - host: springbe.daniyalj.team.arctiq.ca
       http:
         paths:
           - backend:
