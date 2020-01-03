@@ -48,3 +48,18 @@ spec:
   selector:
     app: frontend
   type: NodePort
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: spring-frontend-ingress
+  labels:
+    app: frontend
+spec:
+  rules:
+    - host: spring.daniyalj.team.arctiq.ca
+      http:
+        paths:
+          - backend:
+              serviceName: frontend   # name of the frontend Service
+              servicePort: 8080
